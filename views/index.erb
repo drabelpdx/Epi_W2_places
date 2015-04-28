@@ -1,15 +1,16 @@
-<h1>Places I've Vistied</h1>
 
-  <p>Here are all the places I've visted:</p>
+<h1>Places I've Visited</h1>
+
+  <p>Here are all the places I've visited:</p>
     <ul>
       <% @places.each() do |place| %>
       <li><%= place.description() %></li>
       <% end %>
     </ul>
 
-   <p>Enter a place you've visted:</p>
+   <p>Enter a place you've visited:</p>
 
-    <form action="/places" method="post">
+    <form action="/" method="post">
        <label for="description">Place Description</label>
        <input id="description" name="description" type="text">
 

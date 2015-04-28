@@ -8,9 +8,17 @@ get("/") do
   erb(:index)
 end
 
-post("/places") do
+post('/') do
   description = params.fetch("description")
   place = Place.new(description)
   place.save()
-  erb(:places)
+  @places = Place.all()
+  erb(:index)
 end
+
+# post("/places") do
+#   description = params.fetch("description")
+#   place = Place.new(description)
+#   place.save()
+#   erb(:places)
+# end

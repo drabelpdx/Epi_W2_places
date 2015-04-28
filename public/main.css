@@ -1,0 +1,21 @@
+body {
+  background: #015375;
+}
+
+section.main {
+  background: #fff;
+  width: 80%;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+}
+
+form {
+}
